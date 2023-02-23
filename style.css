@@ -1,0 +1,342 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+}
+
+header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+.klogo{
+  width: 100px;
+}
+nav{
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: grey;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width:0;
+   background: linear-gradient(to right, #FE5748, #FF6542, #00DBA1);
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+nav a:hover {
+  color: black;
+}
+
+/* CSS  for contact us button*/
+.button-28 {
+   background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 10px;
+  color: #3B3B3B;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 30px;
+  transition: all 300ms ease-in-out;
+  float: right;
+  position: absolute;
+  right: 100px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff6c3f 0%, #fe4350 100%);
+  color: #fff;
+}
+
+.welcome {
+  text-align: center;
+  margin-right:50rem;
+  color:#3C3B7A;
+}
+
+.name{
+   font-weight: 10;
+  font-size:25px;
+   color:#3C3B7A;
+}
+
+.card {
+  background-color: #FE5748;
+  box-shadow: 10px 10px 10px #00DBA1;
+  width: 20%;
+  height: 20rem;
+  display: inline-block;
+  margin: 0;
+  border-radius: 30px;
+  text-align: center;
+  float: right;
+}
+
+.card-header {
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
+
+
+.card-content {
+  padding: 20px;
+}
+
+.cert{
+ text-align:center;
+  color:#00DBA1;
+}
+
+.cert-number{
+  color:#E94B0D;
+}
+
+
+.card2 {
+  background-color: #FE5748;
+  box-shadow: 10px 10px 10px #00DBA1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align:center;
+  width: 30%;
+  margin: auto;
+}
+
+.card-heading {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-paragraph {
+  text-align: justify;
+}
+
+
+.cert-number {
+    border-radius: 5px;
+    border: 1px solid #E94B0D;
+    font-size: 25px;
+}
+
+
+/*image upload*/
+
+
+.profile-pic-div{
+   display: flex;
+    height: 9.5rem;
+    width: 9.5rem;
+    margin-left:30rem;
+    margin-top:-75px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0%;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+#photo{
+    height: 100%;
+    width: 100%;
+}
+
+#file{
+    display: none;
+}
+
+#uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.bottom-rectangle {
+  width: 100%;
+  height: 300px;
+background: linear-gradient(-135deg, rgba(0, 183, 135, 1) 50%, #FE5748 100%);
+  position: relative;
+}
+
+.curved-cut {
+  width: 100%;
+  height: 15rem;
+  background-color: #EEEEEE;
+  border-bottom-left-radius: 70% 100%;
+  border-bottom-right-radius: 70% 100%;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+
+
+.card3 {
+  margin: 50px auto;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+h1 {
+  margin: 0 0 30px;
+  text-align:center;
+  font-weight: bold;
+  color:#00DBA1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding:30px;
+   border-bottom: 1px solid #d1d1d1;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+  color: #b01717;
+}
+
+input[type="text"], select, input[type="date"] {
+  flex: 1;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:hover, select:hover, input[type="date"]:hover {
+   border-bottom-color: #00DBA1;
+}
+  
+input[type="text"]:focus, select:focus, input[type="date"]:focus {
+  outline: none;
+  border-bottom-color: #FE5748;
+}
+
+select option[value=""] {
+  display: none;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.download-btn {
+  background-color: #FE5748;
+  box-shadow: 1px 1px 10px #00DBA1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.download-btn:hover{
+   background-color:#00DBA1;
+}
+
+.print-btn{
+  background-color:#00DBA1;
+  box-shadow: 1px 1px 10px #FE5748;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 50px;
+}
+
+.print-btn:hover{
+  background-color: #FE5748;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+}
+
+ 
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 800px;
+  }
+}
+
+ 
+@media screen and (min-width: 901px) {
+  .container {
+    max-width: 1200px;
+  }
+}

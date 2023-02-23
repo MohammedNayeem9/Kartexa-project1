@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate Generation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img  class ="klogo"src="./img/Text Logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://kartexa.com/pj/" target="_blank">Home</a></li>
+        <li><a href="https://career.kartexa.com/profile/" target="_blank">Profile</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Certificate</a></li>
+        <div>
+        <button class="button-28" role="button"  onclick="window.location.href = 'https://kartexa.com/pj/contact/';">Contact Us</button>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class ="welcome">Welcome <span class="name">To Kartexa Certificate Page,<span></h1>
+      <div class="card">
+  <h2 class="card-header">Announcement</h2>
+  <div class="card-body">
+    <p> You can add your own content here.</p>
+    <p></p>
+  </div>
+</div>
+ <div class="certificate-number">
+   <h2 class="cert">Certificate Details</h2>
+                <div class="card2">
+  <h2 class="card-heading">Remarks</h2>
+  <p class="card-paragraph">Rishabh is an outstanding and a very creative young man who is willing to work hard.</p>
+</div>
+    </div>
+    <!---
+      <div class="profile-pic-div">
+  <img src="" id="photo">
+  <input type="file" id="file" accept="image/png, image/jpeg">
+  <label for="file" id="uploadBtn">Choose Photo</label>
+</div>
+---->
+      <div class="card3">
+  <h1>Certificate Generation form</h1>
+  <form>
+    <div class="form-row">
+      <label for="cert-no">Certificate Number:</label>
+      <input type="text" id="cert-no" name="cert-no" placeholder="Enter certificate number" required>
+    </div>
+    <div class="form-row">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"  placeholder="Enter name" required>
+    </div>
+    <div class="form-row">
+      <label for="role">Role:</label>
+      <select id="role" name="role" required>
+        <option value="">Please select a role</option>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="fullstack">Full Stack</option>
+        <option value="react">React</option>
+        <option value="flutter">Flutter</option>
+        <option value="uiux">UI/UX</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label for="org">Organization:</label>
+      <input type="text" id="org" name="org" value="Kartexa" readonly>
+    </div>
+    <div class="form-row">
+        <label for="internshipOrganizer">Internship Organizer:</label>
+        <input type="text" id="internshipOrganizer" name="internshipOrganizer" placeholder="Enter internship organizer" required>
+      </div>
+    <div class="form-row">
+        <label for="internshipName">Internship Name:</label>
+        <input type="text" id="internshipName" name="internshipName" placeholder="Enter internship name" required>
+      </div>
+    <div class="form-row">
+      <label for="start-date">Internship Date:</label>
+      <input type="date" id="sdate" name="start-date" required>
+    </div>
+    <div class="form-row">
+      <label for="end-date">To Date:</label>
+      <input type="date" id="end-date" name="end-date" required>
+    </div>
+    <div class="btn-row">
+      <button class="download-btn" type="button">Download</button>
+      <button class="print-btn" type="button">Print</button>
+    </div>
+  </form>
+</div>
+
+      <div class="bottom-rectangle">
+  <div class="curved-cut"></div>
+</div>
+
+
+<script src="./image input/app.js"></script>
+<script src="./filesaver/FileSaver.js"></script>
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.js"></script>
+<script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
